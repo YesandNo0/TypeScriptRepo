@@ -1,0 +1,29 @@
+{
+  "name": "typescriptrepo",
+  "version": "1.0.0",
+  "description": "Мінімальний шаблон проєкту на TypeScript з двома основними гілками (`main` та `develop`), базовою конфігурацією `tsconfig.json`, прикладом коду в `src/index.ts` і збиранням у `dist`.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YesandNo0/TypeScriptRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YesandNo0/TypeScriptRepo/issues"
+  },
+  "homepage": "https://github.com/YesandNo0/TypeScriptRepo#readme",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
