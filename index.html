@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TS Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header" id="top">
+    <h1>TypeScript + GitHub Pages</h1>
+    <button id="openModalBtn" class="btn">Відкрити модалку</button>
+</header>
+
+<main class="container">
+    <section>
+        <h2>Пости (JSONPlaceholder)</h2>
+        <button id="loadPostsBtn" class="btn">Завантажити пости</button>
+        <ul id="postsList" class="posts"></ul>
+    </section>
+
+    <section>
+        <h2>Скролл-анімація</h2>
+        <div class="box animate-on-scroll">Я з’являюсь при скролі 👋</div>
+        <div style="height: 600px"></div>
+        <a href="#top" id="toTop" class="to-top">↑ До верху</a>
+    </section>
+</main>
+
+<!-- Модалка -->
+<div id="modal" class="modal" aria-hidden="true">
+    <div class="modal__dialog">
+        <h3>Привіт з модалки</h3>
+        <p>Це модальне вікно, яке відкривається по кліку.</p>
+        <button id="closeModalBtn" class="btn btn--secondary">Закрити</button>
+    </div>
+</div>
+
+<script src="dist/main.js" defer></script>
+</body>
+</html>
